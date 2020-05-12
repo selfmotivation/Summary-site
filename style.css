@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #535353;
+}
+
+.header {
+	height: 86px;
+	border-bottom: 2px solid #AA32A5;
+	box-shadow: 0 5px 5px 0px #71006C;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #8A8A8A;
+}
+
+/*.logo {
+	display: flex;
+	align-items: center;
+
+}
+*/
+.logo {
+	width: 75px;
+	height: 75px;
+	border-radius: 30%;
+	/*border: 2px solid #71006C;*/
+	box-shadow: 0 0 4px 1px #AA32A5;
+	margin-left: 55px;
+}
+
+.logo-text {
+	font-size: 40px;
+	font-family: Modak;
+	font-style: italic;
+	text-decoration: none;
+	color: #F1F1F1;
+	border-bottom: 2px solid #71006C;
+	border-top: 2px solid #71006C;
+	margin-left: 30px;
+}
+
+/*.main {
+	width: 80%;
+	margin: 0 auto;
+}*/
+
+.categories {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.categorie-container {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.categorie {
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+	border-radius: 20%;
+	background-color: #fff;
+}
+
+.categorie:hover {
+	box-shadow: 0 0 0 5px #B44F83;
+	transition: 0.2s;
+}
+
+.categorie-invest {
+	background: url(img/briefcase.png) no-repeat;
+	background-size: 160px;
+	background-position: center 15px;
+	background-color: #fff;
+}
+
+ul {
+	list-style-type: circle;
+}
