@@ -4,17 +4,18 @@
 	padding: 0;
 }
 body {
-	background-color: #535353;
+	background-color: #282828;
 }
 
 .header {
 	height: 86px;
-	border-bottom: 2px solid #AA32A5;
-	box-shadow: 0 5px 5px 0px #71006C;
+	/*border-bottom: 2px solid #AA32A5;
+	box-shadow: 0 5px 5px 0px #71006C;*/
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	background-color: #8A8A8A;
+	margin-bottom: 20px;
 }
 
 /*.logo {
@@ -28,8 +29,12 @@ body {
 	height: 75px;
 	border-radius: 30%;
 	/*border: 2px solid #71006C;*/
-	box-shadow: 0 0 4px 1px #AA32A5;
 	margin-left: 55px;
+}
+
+.logo:hover {
+	box-shadow: 0 0 4px 1px #AA32A5;
+	transition: 0.2s;
 }
 
 .logo-text {
@@ -43,10 +48,12 @@ body {
 	margin-left: 30px;
 }
 
-/*.main {
+.main {
 	width: 80%;
+	height: 85vh;
 	margin: 0 auto;
-}*/
+	background-color: #535353;
+}
 
 .categories {
 	width: 80%;
@@ -59,18 +66,53 @@ body {
 
 .categorie-container {
 	width: 300px;
-	height: 300px;
+	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+}
+
+.categorie-container span {
+	display: inline-block;
+	width: 180px;
+	margin-top: 10px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	/*border-bottom: 2px solid #282828;*/
+	/*box-shadow: 0 -2px #E5E5E5;*/
+	/*background-color: #fff;*/
+	padding: 4px 0;
+	/*border-radius: 10px;*/
+}
+
+.categorie-container span:after {
+	width: 100px;
+	height: 2px;
+	background-color: #282828;
+}
+
+.categorie-container-invest {
+	
+}
+
+.categorie-container-psy {
+
+}
+
+.categorie-container-selfmotivation {
+
 }
 
 .categorie {
-	width: 200px;
-	height: 200px;
+	width: 160px;
+	height: 160px;
 	background-color: #fff;
 	border-radius: 20%;
 	background-color: #fff;
+	padding: 20px;
 }
 
 .categorie:hover {
@@ -85,6 +127,32 @@ body {
 	background-color: #fff;
 }
 
+.categorie-psy {
+	background: url(img/psychology.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: #fff;
+}
+
+.categorie-selfmotivation {
+	background: url(img/selfmotivation.png) no-repeat;
+	background-size: 110px;
+	background-position: center;
+	background-color: #fff;
+}
+
+.categorie-coding {
+	background: url(img/coding.png) no-repeat;
+	background-size: 150px;
+	background-position: center;
+	background-color: #fff;
+}
+
 ul {
 	list-style-type: circle;
+	margin: 20px 20px 0;
+}
+
+ol {
+	margin: 20px 20px 0;
 }
